@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-image: url(../img/fundo.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px black;
+
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: white;
+}
+button{
+    background-color: rgb(31, 6, 31);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(54, 10, 54);
+    border-radius: 5px;
+    
+}
+input::placeholder{
+    color: white;
+}
+.marcadores{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.marcadores input{
+    width: 0px;
+    height: 0px;
+    
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: rgb(54, 10, 54);
+}
+
+/************************************/
+h5{
+    color: white;
+    display: inline;
+    margin-top: 25px;
+}
+.containerCh .checkmark{
+    position: absolute;
+    margin-left: -39px;
+    margin-top: -2px;
+    height: 25px;
+    width:25px;
+    background-color: #570c69;
+    border-radius: 2px;
+}
+.containerCh .checkmark::after{
+    content:"";
+    position: absolute;
+    display: none;
+    left: .5rem;
+    top: .25rem;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+.containerCh input:checked ~ .checkmark::after{
+    display: block;
+}
